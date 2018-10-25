@@ -1,7 +1,6 @@
 package sk.model;
 
 import static junit.framework.TestCase.assertEquals;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class PlayerTest {
     @org.junit.Test
@@ -23,7 +22,7 @@ public class PlayerTest {
 
         final Player player = new Player(null, inputValue);
 
-        assertEquals(expectedValue, inputValue);
+        assertEquals(expectedValue, player.getFigure());
     }
 
 }
